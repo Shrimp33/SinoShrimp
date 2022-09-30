@@ -12,31 +12,17 @@ body {
     margin: 10px;
     align-self: left;
 }
-#Landing {
+#Menu {
     display: flex;
     flex-direction: row;
     align-items: left;
     justify-content: left;
 }
-#HomeB, #BlogB, #ProjectsB, #SocialsB {
-    font-family: "Arial";
-    font-size: 25px;
-    color: #ffffff;
-    background-color: rgb(69, 69, 69);
-    border: #ffffff 2px solid;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    float: left;
-}
-#HomeB:hover, #BlogB:hover, #ProjectsB:hover, #SocialsB:hover {
-    background-color: rgb(100, 100, 100);
-}
 #Spacer1, #Spacer2 {
     margin-top: 75px;
     margin-bottom: 50px;
 }
-#pHeadA, #pHeadB, #pHeadC, #pHeadD {
+.pHead {
     font-family: "Arial";
     font-size: 25px;
     color: #ffffff;
@@ -100,4 +86,42 @@ body {
 }
 #GHlink:hover {
     background-color: rgb(50, 50, 50);
+}
+#LogoFrame {
+    border: #ffffff 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: min-content;
+}
+#MasterRow {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    display: inline-block;
+    border: #ffffff 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.MenuButton {
+    font-family: "Arial";
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgb(69, 69, 69);
+    outline: none;
+    border: rgb(69, 69, 69) 0px solid;
+    align-self: left;
+}
+.MenuButton:hover {
+    background-color: rgb(100, 100, 100);
+}
+#About {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    align-items: left;
 }
