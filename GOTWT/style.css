@@ -1,0 +1,7 @@
+.textdump {
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 1.5em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
