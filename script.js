@@ -30,3 +30,20 @@
 //         }
 //     });
 // });
+function GOTWT() {
+    const min = 81;
+    const max = 81;
+    // Prompt for chapters
+    var chapter = prompt("Enter Chapter Number, 81 - 81 are available");
+    // Redirect to chapter
+    if (chapter < min || chapter > max) {
+        alert("Chapter " + chapter + " is not available");
+        return;
+    }
+    // Redirect to GOTWT
+    let url = window.location.href;
+    // Get root "SinoShrimp"
+    let root = url.substring(0, url.lastIndexOf("SinoShrimp")) + "SinoShrimp" + "/GOTWT";
+    // Redirect to home page
+    window.location.href = root + "/chapter" + chapter + ".html";
+}
