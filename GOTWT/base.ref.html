@@ -1,0 +1,60 @@
+// A "template" that my linker builds on for each page
+<!DOCTYPE html>
+<title>
+    {{ChapterNameNoTags}}
+</title>
+<html lang="en">
+    <head>
+        // Links
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        // For meta
+        <script>
+        const index = {{index}};
+        </script>
+    </head>
+    <!-- Page Headding-->
+    <div id="branding">
+        <div id="logo">
+            <img id="logoimg" src="SinoShrimpLogo.copy.png" alt="SinoShrimp Logo">
+            <div id="topmenu">
+                <div id="Menu">
+                    <div class="MasterRow" id="MasterTop">
+                        <button type="button" class="MenuButtonT" id="Home" onclick="Home()">Home</button>
+                        <button hidden type="button" class="MenuButtonT" id="prevT" onclick="prev()">Previous</button>
+                        <button hidden type="button" class="MenuButtonT" id="nextT" onclick="next()">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gradient">
+        </div>
+    </div>
+    <body>
+        <div id="content">
+            <div id="chapter">
+                <h1 id="chaptername">
+                    {{ChapterName}}
+                </h1>
+                <hr class="divider" align="left">
+                <div id="textcontent">
+                    {{ChapterText}}
+                </div>
+            </div>
+        </div>
+    <!-- Navigation Menu-->
+        <div id="botmenu">
+            <div id="Menu">
+                <div class="MasterRow" id="MasterBot">
+                    <button type="button" class="MenuButton" id="Home" onclick="Home()">Home</button>
+                    <button hidden type="button" class="MenuButton" id="prevB" onclick="prev()">Previous</button>
+                    <button hidden type="button" class="MenuButton" id="nextB" onclick="next()">Next</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    // Enable / Disable Buttons based on index
+    <script>
+        indexcheck();
+    </script>
+</html>

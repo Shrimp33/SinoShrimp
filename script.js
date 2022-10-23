@@ -32,9 +32,9 @@
 // });
 function GOTWT() {
     const min = 81;
-    const max = 81;
+    const max = 82;
     // Prompt for chapters
-    var chapter = prompt("Enter Chapter Number, 81 - 81 are available");
+    var chapter = prompt("Enter Chapter Number, 81 - 82 are available");
     // Redirect to chapter
     if (chapter < min || chapter > max) {
         alert("Chapter " + chapter + " is not available");
@@ -45,5 +45,5 @@ function GOTWT() {
     // Get root "SinoShrimp"
     let root = url.substring(0, url.lastIndexOf("SinoShrimp")) + "SinoShrimp" + "/GOTWT";
     // Redirect to home page
-    window.location.href = root + "/chapter" + chapter + ".html";
+    window.location.href = root + "/c" + chapter + ".html";
 }
