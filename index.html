@@ -3,6 +3,7 @@
 <html lang="en">
     <!-- Head -->
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="script.js"></script>
@@ -12,12 +13,14 @@
         <div id="Landing">
             <div id="Title">SinoShrimp Translations</div>  <!--I need to eventually change this to a logo-->
             <div id="LogoFrame">
-                <img id="LogoImg" src="SinoShrimpLogo.png" alt="">
+                <img id="LogoImg" src="SinoShrimpLogo.png" alt="SinoShrimpLogo">
             </div>
-            <div id="Menu">
-                <div class="Row" id="MasterRow">
-                    <button type="button" class="MenuButton" id="AboutButton" onclick="GOTWT()">GOTWT</button>
-                </div>
+            <div class="gradient" id="g1">
+                <div id="Menu">
+                    <div class="Row" id="MasterRow">
+                        <button type="button" class="MenuButton" id="AboutButton" onclick="GOTWT()">GOTWT</button>
+                    </div>
+            </div>
                 <!-- <button type=button id="HomeB" onclick="Home()"> Home</button>
                 <button type=button id="BlogB" onclick="GameOfTheWorldTree()"> Blog</button> -->
             <!-- To add after more series are added 
@@ -29,10 +32,14 @@
         </div>
         <div id="content">
             <!-- About Me -->
-            <div id="About">
-                <h1 class="pHead" id="pheadA"> About</h1>
-                <hr class="divider" align="left">
-                <p1 id="pText1" class="pText">A little side project that I'm doing to practice chinese before I get hit with the AP test.</p1>
+            <div id="g2">
+                <div id="About">
+                    <h1 class="pHead" id="pheadA"> About</h1>
+                    <hr class="divider" align="left">
+                    <p1 id="pText1" class="pText">A little side project that I'm doing to practice chinese before I get hit with the AP test.</p1>
+                </div>
             </div>
+
+        </div>
     </body>
 </html>

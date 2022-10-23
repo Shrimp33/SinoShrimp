@@ -1,93 +1,200 @@
-body {
-    background-color: rgb(69, 69, 69);
+@media only screen and (max-width: 600px) {
+    /* For phones: */
+    body {
+        background-color: rgb(69, 69, 69);
+    }
+    #Title {
+        font-family: "Arial";
+        font-size: 7.7vw;
+        color: #ffffff;
+        border: #ffffff 0.7vw solid;
+        border-radius: 3vw;
+        padding: 1vw;
+        margin: 1vw;
+        align-self: left;
+    }
+    #Menu {
+        display: block;
+        flex-direction: row;
+        align-items: left;
+        justify-content: left;
+    }
+    #Spacer1, #Spacer2 {
+        margin-top: 75px;
+        margin-bottom: 50px;
+    }
+    .pHead {
+        font-family: "Arial";
+        font-size: 4vh;
+        color: #ffffff;
+        padding: 10px;
+        margin: 10px;
+        align-self: left;
+    }
+    .pText {
+        font-family: "Arial";
+        font-size: 3vh;
+        color: #ffffff;
+        width: auto;
+        float: left;
+    }
+    #LogoFrame {
+        border: #ffffff 0 solid;
+        border-radius: 3vw;
+        padding: 1vw;
+        margin: auto;
+        float: left;
+        width: min-content;
+        background-color: rgb(195,195,195);
+    }
+    #MasterRow {
+        align-items: left;
+        justify-content: left;
+        display: inline-block;
+        border: #ffffff 2px solid;
+        background-color: rgb(165, 165, 165);;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .MenuButton {
+        font-family: "Arial";
+        font-size: 20px;
+        color: #ffffff;
+        background-color: rgb(165, 165, 165);
+        outline: none;
+        border: rgb(69, 69, 69) 0px solid;
+        align-self: left;
+    }
+    .MenuButton:hover {
+        background-color: rgb(200, 200, 200);
+    }
+    #About {
+        flex: auto;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        align-items: left;
+    }
+    .divider {
+        width: 1px;
+        margin-left: 4%;
+        margin-right: 4%;
+        color: white;
+        background-color: white;
+    }
+    #LogoImg {
+        width: 94vw;
+        height: auto;
+    }
+    #g1 {  /* Ty for the gradient: https://blog.idrisolubisi.com/how-to-create-beautiful-gradients-with-javascript */
+        background-image: linear-gradient(rgb(195,195,195), rgb(120, 120, 120)); 
+        height: 15vh;
+        float: center;
+        margin-top: 17.6vh;
+    }
+    #g2 {  /* Ty for the gradient: https://blog.idrisolubisi.com/how-to-create-beautiful-gradients-with-javascript */
+        background-image: linear-gradient(rgb(120,120,120), rgb(69, 69, 69)); 
+        height: 20vh;
+        float: center;
+        margin-top: 0;
+    }
 }
 
-#Title {
-    font-family: "Arial";
-    font-size: 50px;
-    color: #ffffff;
-    border: #ffffff 2px solid;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    align-self: left;
-}
-#Menu {
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    justify-content: left;
-}
-#Spacer1, #Spacer2 {
-    margin-top: 75px;
-    margin-bottom: 50px;
-}
-.pHead {
-    font-family: "Arial";
-    font-size: 25px;
-    color: #ffffff;
-    padding: 10px;
-    margin: 10px;
-    align-self: left;
-}
-.pText {
-    font-family: "Arial";
-    font-size: 20px;
-    color: #ffffff;
-    width: 20%;
-    float: left;
-}
 
-/* Credits to https://stackoverflow.com/a/15662955 for the scrolling */
-#blogSlider{
-    height: 256px;
-    background: #e5e5e5 url("merged.png") repeat 0 center;
-    margin: 20px;
-    border: black 5px solid;
-}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    body {
+        background-color: rgb(69, 69, 69);
+    }
 
-#LogoFrame {
-    border: #ffffff 2px solid;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    float: left;
-    width: min-content;
-}
-#MasterRow {
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    justify-content: left;
-    display: inline-block;
-    border: #ffffff 2px solid;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-}
-.MenuButton {
-    font-family: "Arial";
-    font-size: 20px;
-    color: #ffffff;
-    background-color: rgb(69, 69, 69);
-    outline: none;
-    border: rgb(69, 69, 69) 0px solid;
-    align-self: left;
-}
-.MenuButton:hover {
-    background-color: rgb(100, 100, 100);
-}
-#About {
-    flex: auto;
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    align-items: left;
-}
-.divider {
-    width: 1px;
-    margin-left: 4%;
-    margin-right: 4%;
-    color: white;
-    background-color: white;
+    #Title {
+        font-family: "Arial";
+        font-size: 50px;
+        color: #ffffff;
+        border: #ffffff 2px solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        align-self: left;
+    }
+    #Menu {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        justify-content: left;
+    }
+    #Spacer1, #Spacer2 {
+        margin-top: 75px;
+        margin-bottom: 50px;
+    }
+    .pHead {
+        font-family: "Arial";
+        font-size: 2vw;
+        color: #ffffff;
+        padding: 10px;
+        margin: 10px;
+        align-self: left;
+    }
+    .pText {
+        font-family: "Arial";
+        font-size: 1.5vw;
+        color: #ffffff;
+        width: auto;
+        float: left;
+    }
+
+    /* Credits to https://stackoverflow.com/a/15662955 for the scrolling
+    #blogSlider{
+        height: 256px;
+        background: #e5e5e5 url("merged.png") repeat 0 center;
+        margin: 20px;
+        border: black 5px solid;
+    } */
+
+    #LogoFrame {
+        border: #ffffff 2px solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        float: left;
+        width: min-content;
+    }
+    #MasterRow {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        justify-content: left;
+        display: inline-block;
+        border: #ffffff 2px solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .MenuButton {
+        font-family: "Arial";
+        font-size: 20px;
+        color: #ffffff;
+        background-color: rgb(69, 69, 69);
+        outline: none;
+        border: rgb(69, 69, 69) 0px solid;
+        align-self: left;
+    }
+    .MenuButton:hover {
+        background-color: rgb(100, 100, 100);
+    }
+    #About {
+        flex: auto;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        align-items: left;
+    }
+    .divider {
+        width: 1px;
+        margin-left: 4%;
+        margin-right: 4%;
+        color: white;
+        background-color: white;
+    }
 }
